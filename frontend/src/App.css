@@ -1,0 +1,28 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&family=Roboto&family=Work+Sans:wght@300&display=swap');
+
+  .App{
+    min-height:100vh;
+    display:flex;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-position:center;
+  }
+
+/* ye fxnality niche wale scrollar ke liye hai MYCHATS component me ...jo left side hai isko nhi laaggaoge to ek scroolar aa jayega 
+How To Create Custom Scrollbars
+Chrome, Edge, Safari and Opera support the non-standard ::-webkit-scrollbar pseudo element, which allows us to modify the look of the browser's scrollbar.
+
+The following example creates a thin (10px wide) scrollbar, which has a grey track/bar color and a dark-grey (#888) handle:*/
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.281);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
