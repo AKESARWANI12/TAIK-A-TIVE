@@ -35,7 +35,7 @@ const submitHandler=async()=>{
         },
       };
 
-      const { data } = await axios.post( "/api/user/login",{ email, password },config
+      const { data } = await axios.post( `${process.env.REACT_APP_BACKEND_URL}/api/user/login`,{ email, password },config
       );
 
       toast({
